@@ -21,6 +21,13 @@ body {
 }
   
 </style>
+<script>
+  function choose(ol) {
+  var choices = ol.children
+  var index = Math.floor(Math.random() * choices.length);
+  return choices[index].innerText;
+  }
+</script>
 <body>
   
   <div class="wrapper" align="center" style="position:static; height: 100%; width: 100%; top:0;left 0;">
@@ -30,5 +37,11 @@ body {
     </ol>
   </div>
   </div>
+  <div id="answer">
+    
+  </div>
+  <button>
+    text
+  </button>
   
 </body>
