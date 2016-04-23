@@ -27,12 +27,17 @@ body {
   var index = Math.floor(Math.random() * choices.length);
   return choices[index].innerText;
   }
+  
+  function updateanswer() {
+document.getElementById("answer").innerText=choose(document.getElementById("choices"))
+}
+  
 </script>
 <body>
   
   <div class="wrapper" align="center" style="position:static; height: 100%; width: 100%; top:0;left 0;">
   <div contentEditable="true" id="text">
-    <ol>
+    <ol id="choices">
       <li>Type Here</li>
     </ol>
   </div>
@@ -40,7 +45,7 @@ body {
   <div id="answer">
     
   </div>
-  <button>
+  <button onclick="updateanswer()">
     text
   </button>
   
