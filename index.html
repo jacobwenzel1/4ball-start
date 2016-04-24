@@ -38,6 +38,10 @@ img {
 document.getElementById("answer").innerText=choose(document.getElementById("choices"))
 }
   
+  function instructions() {
+    window.alert("Type different things or places, and then click on the magic 4 ball and it will pick one of the things or places for you.")
+  }
+  
 </script>
 <body>
   
@@ -50,6 +54,9 @@ document.getElementById("answer").innerText=choose(document.getElementById("choi
       <li>Type Here</li>
     </ol>
   </div>
+  <button onclick="instructions()">
+    Instructions
+  </button>
   </div>
 
 
