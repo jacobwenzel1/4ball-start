@@ -33,11 +33,7 @@ img {
   var index = Math.floor(Math.random() * choices.length);
   return choices[index].innerText;
   }
-  
-  function clearText() {
-    document.getElementById("choices").value = "";
-  }
-  
+
   function updateanswer() {
 document.getElementById("answer").innerText=choose(document.getElementById("choices"))
 }
@@ -55,7 +51,7 @@ document.getElementById("answer").innerText=choose(document.getElementById("choi
   </div>
   <div contentEditable="true" id="text">
     <ol id="choices">
-      <li onclick="clearText()">Type Here</li>
+      <li>Type Here</li>
     </ol>
   </div>
   <button onclick="instructions()">
