@@ -34,8 +34,8 @@ img {
   return choices[index].innerText;
   }
   
-  function clearText() {
-    document.getElementById("choices").value = "";
+  function eraseText() {
+        document.getElementById("test1").value = "";
   }
   
   function updateanswer() {
@@ -53,9 +53,9 @@ document.getElementById("answer").innerText=choose(document.getElementById("choi
   <img src="http://i.imgur.com/txjQJAx.png" id="eightball" onclick="updateanswer()"/>
   <div id="answer">
   </div>
-  <div contentEditable="true" id="text">
+  <div contentEditable="true" id="text" onclick="javascript:eraseText();">
     <ol id="choices">
-      <li onclick="clearText()">Type Here</li>
+      <li id="test1">Type Here</li>
     <input placeholder="text">
     </ol>
   </div>
