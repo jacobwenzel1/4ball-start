@@ -35,7 +35,7 @@ img {
   }
   
   function clearText() {
-    document.getElementById("test1").value = "";
+    document.getElementById("choices").innerText=choose(document.getElementById("choices")) = "";
   }
   
   function updateanswer() {
@@ -55,7 +55,7 @@ document.getElementById("answer").innerText=choose(document.getElementById("choi
   </div>
   <div contentEditable="true" id="text">
     <ol id="choices">
-      <li id="test1" onclick="clearText()">Type Here</li>
+      <li onclick="clearText()">Type Here</li>
     
     </ol>
   </div>
